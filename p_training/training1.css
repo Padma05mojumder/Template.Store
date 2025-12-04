@@ -1,0 +1,271 @@
+body{
+    margin:0;
+}
+#image_container{
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.6%;
+    object-fit:cover;
+    margin-left: 5%;
+    border-color:rgba(255, 176, 63, 0.769) ;
+    border-style: solid;
+}
+#image{
+    width:90%;
+    margin-right:1%;
+    margin-left: 1%;
+    aspect-ratio: 1.5;
+    border-style: solid;
+    border-color: rgba(255, 176, 63, 0.769);
+    border-width: 0.5rem ;
+}
+#section1{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    gap:10%;
+    margin-top: 5%;
+}
+#text{
+    font-size: 2.3vw;
+    font-family: cursive;
+    margin-left:1%;
+    width: max-content;
+}
+#download{
+    width:70%;
+    background-color: rgba(255, 176, 63, 0.769);
+    border-radius: 1.5rem;
+    margin-left: 25%;
+    text-align: center;
+    aspect-ratio: 4;
+}
+#download_div{
+    width:30%;
+    aspect-ratio:2.5;
+}
+#download_text{
+    color:white;
+    font-family: cursive;
+    font-size: 2vw;
+    margin-left:2%;
+}
+#introduction{
+    width:100%;
+    height: 6rem;
+    font-size: 2vw;
+    font-family: cursive;
+    margin-top: 0.5%;
+    background-color: rgba(255, 176, 63, 0.769);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#introduction>p{
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+#DNmode{
+    width:3%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-style:dashed;
+    border-color:#5a3502 ;
+    box-shadow: 0 0 0.5rem 0.2rem rgba(245, 245, 245, 0.7);
+    background-color: whitesmoke;
+    cursor: pointer;
+    margin-left: 10%;
+}
+.carousel-control-next-icon{
+    background-color: black;
+}
+.carousel-control-prev-icon{
+    background-color: black;
+}
+.bar_animation{
+  animation: bar_change 0.1s ease-in forwards ;
+}
+@keyframes bar_change{
+  from{box-shadow: none;}
+  to{box-shadow: inset 1rem -0.3rem #5a3502;
+border-color: whitesmoke;
+}
+}
+.bar_reverse_animation{
+  animation: bar_reverse_change 0.1s ease-out forwards ;
+}
+@keyframes bar_reverse_change{
+  from{box-shadow: inset 1rem -0.3rem #5a3502;
+border-color: whitesmoke;}
+  to{box-shadow: none}
+}
+/*RESPONSIVE DESIGN*/
+@media screen and (min-width:768px) and (max-width:1300px){
+#image_container{
+    width: 100%;
+    margin-left: 1%;
+}
+#download_div{
+    width:70%;
+    margin-left: 1%;
+    margin-bottom:2%;
+}
+#download{
+    margin-left: 12%;
+}
+#text{
+    font-size: 3vw;
+}
+#download_text{
+    font-size: 2vw;
+    padding-top: 6%;
+    margin-left: 4%;
+}
+#section1{
+    gap:5%;
+}
+#introduction>p{
+    font-size: 4vw;
+}
+#DNmode{
+  width:6%;
+}
+}
+@media screen and (min-width:600px) and (max-width:768px){
+#section1{
+    flex-direction: column;
+}
+#image_container{
+    width: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 5%;
+}
+#download_div{
+    width:60%;
+    margin-left: 5%;
+    margin-top:10%;
+    aspect-ratio: 2;
+}
+#text{
+    font-size: 5vw;
+    position: relative;
+    right:25%;
+}
+#download_text{
+    font-size: 3.5vw;
+    padding-top: 2%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+#introduction>p{
+    font-size: 4.5vw;
+}
+#download{
+    aspect-ratio: 15;
+    margin-left: 10%;
+}
+#DNmode{
+  width:6%;
+}
+}
+@media screen and (min-width:420px) and (max-width:600px){
+#section1{
+    flex-direction: column;
+}
+#image_container{
+    width: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 5%;
+}
+#download_div{
+    width:60%;
+    margin-left: 5%;
+    margin-top:10%;
+}
+#download{
+    margin-top: 20%;
+}
+#text{
+    font-size: 5vw;
+    position: relative;
+    right:25%;
+}
+#download_text{
+    font-size: 3.5vw;
+    padding-top: 1%;
+    margin-left: 8%;
+    margin-right: 7.5%;
+}
+#introduction>p{
+    font-size: 4vw;
+}
+#DNmode{
+  width:6%;
+}
+#download{
+    aspect-ratio: 10;
+    margin-left: 10%;
+}
+}
+@media screen and (max-width:420px){
+#section1{
+    flex-direction: column;
+}
+#image_container{
+    width: 90%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 15%;
+}
+#download_div{
+    width:60%;
+    margin-left: 1%;
+    margin-right: 10%;
+    margin-top:10%;
+}
+#download{
+    margin-top: 25%;
+    margin-left:22%;
+}
+#text{
+    font-size: 5vw;
+    position: relative;
+    right:14%;
+    margin-top: 20%;
+}
+#download_text{
+    font-size: 3.5vw;
+    padding-top: 1%;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+#introduction>p{
+    font-size: 6vw;
+}
+#DNmode{
+  width:6%;
+}
+@keyframes bar_change{
+  from{box-shadow: none;}
+  to{box-shadow: inset 0.5rem -0.3rem #5a3502;
+border-color: whitesmoke;
+}
+}
+.bar_reverse_animation{
+  animation: bar_reverse_change 0.1s ease-out forwards ;
+}
+@keyframes bar_reverse_change{
+  from{box-shadow: inset 0.5rem -0.3rem #5a3502;
+border-color: whitesmoke;}
+  to{box-shadow: none}
+}
+#download{
+    aspect-ratio: 10;
+}
+}
