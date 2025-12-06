@@ -1,0 +1,248 @@
+body{
+    margin:0;
+}
+#image_container{
+    width:50%;
+    height:30%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    object-fit:cover;
+    margin-left: 1%;
+    margin-right: 1%;
+    aspect-ratio: 2;
+    border-radius: 1.5rem;
+}
+#image{
+    width:96%;
+    height:92%;
+    margin-right:1%;
+    margin-left: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    aspect-ratio: 2;
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: rgba(11, 160, 56, 0.731);;
+}
+#section1{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+#text{
+    width: max-content;
+    font-size: 3vw;
+    font-family: cursive;
+    margin-top: 1%;
+}
+#download{
+    width:40%;
+    height:20%;
+    background-color:rgba(11, 160, 56, 0.731);
+    border-radius: 1rem;
+    margin-left: 28%;
+}
+#download_div{
+    width:60%;
+    aspect-ratio:2.5;
+}
+#download_text{
+    color:white;
+    font-family: cursive;
+    font-size: 1.5vw;
+    margin-left:22%;
+    padding-top:5.5%;
+}
+#introduction{
+    width:90%;
+    height: 6rem;
+    font-size: 2vw;
+    font-family: cursive;
+    margin-top: 0.5%;
+    background-color: rgba(11, 160, 56, 0.731);
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-left: 5%;
+    border-radius: 1rem;
+}
+#introduction>p{
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+#DNmode{
+    width:3%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-style:dashed;
+    border-color:#5a3502 ;
+    box-shadow: 0 0 0.5rem 0.2rem rgba(245, 245, 245, 0.7);
+    background-color: whitesmoke;
+    cursor: pointer;
+    margin-left: 10%;
+}
+.bar_animation{
+  animation: bar_change 0.1s ease-in forwards ;
+}
+@keyframes bar_change{
+  from{box-shadow: none;}
+  to{box-shadow: inset 1rem -0.3rem #5a3502;
+border-color: whitesmoke;
+}
+}
+.bar_reverse_animation{
+  animation: bar_reverse_change 0.1s ease-out forwards ;
+}
+@keyframes bar_reverse_change{
+  from{box-shadow: inset 1rem -0.3rem #5a3502;
+border-color: whitesmoke;}
+  to{box-shadow: none}
+}
+/*RESPONSIVE DESIGN*/
+@media screen and (min-width:768px) and (max-width:1300px){
+#image_container{
+    width: 90%;
+    margin-left: 1%;
+}
+#download_div{
+    width:70%;
+    margin-left: 5%;
+    margin-bottom:2%;
+}
+#text{
+    font-size: 3vw;
+}
+#download_text{
+    font-size: 2vw;
+    padding-top: 5%;
+    margin-left: 20%;
+}
+#introduction>p{
+    font-size: 3vw;
+}
+#DNmode{
+  width:6%;
+}
+}
+@media screen and (min-width:600px) and (max-width:768px){
+#image_container{
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 10%;
+}
+#introduction{
+    margin-left: 5%;
+    width:90%;
+}
+#download_div{
+    width:60%;
+    margin-left: 0.5%;
+    margin-bottom:10%;
+    aspect-ratio: 2;
+    margin-top: 10%;
+}
+#text{
+    font-size: 4vw;
+    position: relative;
+    right:20%;
+}
+#download_text{
+    font-size: 2.4vw;
+    padding-top: 10%;
+    margin-left: 8%;
+}
+#introduction>p{
+    font-size: 4vw;
+}
+#download{
+    aspect-ratio: 1;
+    margin-left: 25%;
+    margin-top: 15%;
+}
+#DNmode{
+  width:6%;
+}
+}
+@media screen and (min-width:420px) and (max-width:600px){
+#image_container{
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 10%;
+}
+#introduction{
+    margin-left: 5%;
+    width:90%;
+}
+#download_div{
+    width:80%;
+    margin-left: 0.5%;
+    margin-bottom:10%;
+    aspect-ratio: 2;
+    margin-top: 10%;
+}
+#text{
+    font-size: 4.5vw;
+    position: relative;
+    right:6%;
+}
+#download_text{
+    font-size: 3vw;
+    padding-top: 12%;
+    margin-left: 9%;
+}
+#introduction>p{
+    font-size: 4.5vw;
+}
+#download{
+    aspect-ratio: 0.8;
+    margin-left: 27%;
+    margin-top: 15%;
+}
+#DNmode{
+  width:6%;
+}
+}
+@media screen and (max-width:420px){
+#image_container{
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 10%;
+}
+#introduction{
+    margin-left: 5%;
+    width:90%;
+}
+#download_div{
+    width:80%;
+    margin-left: 0.5%;
+    margin-bottom:10%;
+    aspect-ratio: 2;
+    margin-top: 10%;
+}
+#text{
+    font-size: 4.5vw;
+    position: relative;
+    right:6%;
+}
+#download_text{
+    font-size: 3vw;
+    padding-top: 12%;
+    margin-left: 9%;
+}
+#introduction>p{
+    font-size: 5vw;
+}
+#download{
+    aspect-ratio: 0.8;
+    margin-left: 27%;
+    margin-top: 15%;
+}
+#DNmode{
+  width:6%;
+}
+}
