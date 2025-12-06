@@ -1,0 +1,147 @@
+header{
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: inset -0.2em -0.2em 0.2em rgba(93, 92, 92, 0.169),inset 0.2em 0.2em 0.2em rgba(92, 92, 92, 0.169);
+}
+.topic{
+  font-size: 3vw;
+  color:rgba(255, 176, 63, 0.769);
+  font-family:cursive;
+  text-decoration:underline;
+  text-align: center;
+  font-weight: 700;
+  margin-left: 10%;
+}
+#section1{
+    width:100%;
+    aspect-ratio: 1;
+    background-color: rgb(255, 255, 255);
+     box-shadow: inset -0.2em -0.2em 0.2em rgba(93, 92, 92, 0.169),inset 0.2em 0.2em 0.2em rgba(93, 92, 92, 0.169);
+    border-radius: 2rem;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+}
+a{
+  text-decoration:none;
+}
+.frame{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:70%;
+  height:10%;
+  margin-left: 0.5%;
+  margin-right: 1%;
+  margin-top: 5%;
+  border-radius: 0.5rem;
+  aspect-ratio: 1.04;
+  cursor: pointer;
+}
+.images{
+  width: 99%;
+  height:95%;
+  margin-top: 19%;
+  margin-left: 1%;
+  border-radius: 0.3rem;
+  border-style: solid;
+  border-color:rgba(255, 176, 63, 0.769); 
+  aspect-ratio: 2;
+  cursor:pointer;
+}
+.text{
+  font-size: 1.5vw;
+  color:rgb(255, 154, 46);
+  margin-top: 18%;
+  text-align: center;
+}
+/*RESPONSIVE DESIGN*/
+@media screen and (min-width:768px) and (max-width:1300px){
+.topic{
+  font-size:5.5vw;
+  margin-left: 0.4%;
+}
+.text{
+  font-size: 1.7vw;
+}
+}
+@media screen and (min-width:600px) and (max-width:768px){
+  header{
+    width: 100%;
+    height: 20vh;
+  }
+#DNmode{
+  width:3.5%;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+.topic{
+  font-size:5.5vw;
+  margin-left: 0.4%;
+}
+.text{
+  font-size: 3vw;
+  margin-top: 21%;
+  height: fit-content;
+}
+.frame{
+  width: 40%;
+  margin-top: 12%;
+}
+#section1{
+  aspect-ratio: 1;
+}
+}
+@media screen and (min-width:420px) and (max-width:600px){
+  header{
+    width: 100%;
+    height: 20vh;
+  }
+.topic{
+  font-size: 5.5vw;
+  margin-left: 0.4%;
+}
+.text{
+  font-size: 3vw;
+  margin-top: 21%;
+  height: fit-content;
+}
+.frame{
+  width: 20%;
+  margin-top: 12%;
+}
+#section1{
+  aspect-ratio: 1;
+}
+}
+@media screen and (max-width:420px){
+  header{
+    width: 100%;
+    height: 20vh;
+  }
+.topic{
+  font-size: 6vw;
+  margin-left: 0.4%;
+}
+.text{
+  font-size: 5.5vw;
+  margin-top: 21%;
+  height: fit-content;
+}
+.frame{
+  width: 95%;
+  margin-bottom: 17%;
+  margin-left: 1.79%;
+}
+#section1{
+  aspect-ratio: 0.28;
+  flex-direction: column;
+}
+}

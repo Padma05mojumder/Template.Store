@@ -1,0 +1,175 @@
+header{
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    box-shadow: inset -0.2em -0.2em 0.2em rgba(93, 92, 92, 0.169),inset 0.2em 0.2em 0.2em rgba(92, 92, 92, 0.169);
+}
+.topic{
+  font-size: 3vw;
+  color:rgba(26, 136, 245, 0.53);
+  font-family:cursive;
+  text-decoration:underline;
+  text-align: center;
+  font-weight: 700;
+  margin-left: 1%;
+}
+#DNmode{
+    width:3%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-style:dashed;
+    border-color:#5a3502 ;
+    background-color: whitesmoke;
+    cursor: pointer;
+    margin-left: 30%;
+}
+#section1{
+    width:100%;
+    aspect-ratio: 1;
+    background-color: rgb(255, 255, 255);
+     box-shadow: inset -0.2em -0.2em 0.2em rgba(93, 92, 92, 0.169),inset 0.2em 0.2em 0.2em rgba(93, 92, 92, 0.169);
+    border-radius: 2rem;
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+}
+a{
+  text-decoration:none;
+}
+.frame{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width:70%;
+  height:10%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 8%;
+  border-radius: 0.5rem;
+  aspect-ratio: 1.04;
+  cursor: pointer;
+}
+.images{
+  width: 95%;
+  height:95%;
+  margin-top: 19%;
+  margin-left: 2.4%;
+  border-radius: 0.3rem;
+  border-style: solid;
+  border-color:rgba(26, 136, 245, 0.53) ;
+  aspect-ratio: 1.22;
+  cursor:pointer;
+}
+.text{
+  font-size: 1.5vw;
+  color:rgba(26, 136, 245);
+  margin-top: 18%;
+  text-align: center;
+}
+.bar_animation{
+  animation: bar_change 0.1s ease-in forwards ;
+}
+@keyframes bar_change{
+  from{box-shadow: none;}
+  to{box-shadow: inset 1rem -0.3rem #5a3502;
+border-color: whitesmoke;
+}
+}
+.bar_reverse_animation{
+  animation: bar_reverse_change 0.1s ease-out forwards ;
+}
+@keyframes bar_reverse_change{
+  from{box-shadow: inset 1rem -0.3rem #5a3502;
+border-color: whitesmoke;}
+  to{box-shadow: none}
+}
+/*RESPONSIVE DESIGN*/
+@media screen and (min-width:768px) and (max-width:1300px){
+.topic{
+  font-size:5.5vw;
+  margin-left: 0.4%;
+}
+.text{
+  font-size: 1.7vw;
+}
+}
+@media screen and (min-width:600px) and (max-width:768px){
+  header{
+    width: 100%;
+    height: 20vh;
+  }
+#DNmode{
+  width:3.5%;
+  margin-left: 4%;
+  margin-top: 2%;
+}
+.topic{
+  font-size:5.5vw;
+  margin-left: 0.4%;
+}
+.text{
+  font-size: 3vw;
+  margin-top: 21%;
+  height: fit-content;
+}
+.frame{
+  width: 40%;
+  margin-top: 12%;
+}
+#section1{
+  aspect-ratio: 1;
+}
+}
+@media screen and (min-width:420px) and (max-width:600px){
+  header{
+    width: 100%;
+    height: 20vh;
+  }
+.topic{
+  font-size: 5.5vw;
+  margin-left: 0.4%;
+}
+.text{
+  font-size: 3vw;
+  margin-top: 21%;
+  height: fit-content;
+}
+.frame{
+  width: 20%;
+  margin-top: 12%;
+}
+#section1{
+  aspect-ratio: 1;
+}
+}
+@media screen and (max-width:420px){
+  header{
+    width: 100%;
+    height: 20vh;
+  }
+
+.topic{
+  font-size: 6vw;
+  margin-left: 0.4%;
+}
+.text{
+  font-size: 5.5vw;
+  margin-top: 21%;
+  height: fit-content;
+}
+.frame{
+  width: 95%;
+  margin-bottom: 20%;
+  margin-left: 1.79%;
+}
+#section1{
+  aspect-ratio: 0.22;
+  flex-direction: column;
+}
+}
