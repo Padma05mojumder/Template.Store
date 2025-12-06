@@ -1,0 +1,232 @@
+body{
+    margin:0;
+}
+#image_container{
+    width:27%;
+    height:5%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.6%;
+    object-fit:cover;
+    margin-left: 10%;
+}
+#image{
+    width:90%;
+    margin-right:1%;
+    margin-left: 1%;
+    aspect-ratio: 0.7;
+    border-style: solid;
+    border-color: #1049bb;
+    border-width: 0.5rem ;
+}
+#section1{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    gap:10%;
+}
+#text{
+    font-size: 3vw;
+    font-family: cursive;
+    margin-left:10%;
+}
+#download{
+    width:70%;
+    height:40%;
+    background-color: #1049bb;
+    border-radius: 1.5rem;
+    margin-left: 10%;
+}
+#download_div{
+    width:30%;
+    aspect-ratio:2.5;
+}
+#download_text{
+    color:white;
+    font-family: cursive;
+    font-size: 1.5vw;
+    margin-left:19%;
+    padding-top:5%;
+}
+#introduction{
+    width:100%;
+    height: 6rem;
+    font-size: 2vw;
+    font-family: cursive;
+    margin-top: 0.5%;
+    background-color: rgb(6, 104, 170);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#introduction>p{
+    margin-left: 1%;
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+#DNmode{
+    width:3%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border-style:dashed;
+    border-color:#5a3502 ;
+    box-shadow: 0 0 0.5rem 0.2rem rgba(245, 245, 245, 0.7);
+    background-color: whitesmoke;
+    cursor: pointer;
+    margin-right: 1%;
+}
+.bar_animation{
+  animation: bar_change 0.1s ease-in forwards ;
+}
+@keyframes bar_change{
+  from{box-shadow: none;}
+  to{box-shadow: inset 1rem -0.3rem #5a3502;
+border-color: whitesmoke;
+}
+}
+.bar_reverse_animation{
+  animation: bar_reverse_change 0.1s ease-out forwards ;
+}
+@keyframes bar_reverse_change{
+  from{box-shadow: inset 1rem -0.3rem #5a3502;
+border-color: whitesmoke;}
+  to{box-shadow: none}
+}
+/*RESPONSIVE DESIGN*/
+@media screen and (min-width:768px) and (max-width:1300px){
+#image_container{
+    width: 100%;
+    margin-left: 1%;
+}
+#download_div{
+    width:70%;
+    margin-left: 5%;
+    margin-bottom:2%;
+}
+#text{
+    font-size: 3vw;
+}
+#download_text{
+    font-size: 2vw;
+    padding-top: 5%;
+    margin-left: 10%;
+}
+#introduction>p{
+    font-size: 2vw;
+}
+#DNmode{
+  width:6%;
+}
+}
+@media screen and (min-width:600px) and (max-width:768px){
+#section1{
+    flex-direction: column;
+}
+#image_container{
+    width: 90%;
+    margin-left: 1%;
+}
+#download_div{
+    width:60%;
+    margin-left: 5%;
+    margin-bottom:10%;
+    aspect-ratio: 2;
+}
+#text{
+    font-size: 6vw;
+}
+#download_text{
+    font-size: 3.5vw;
+    padding-top: 10%;
+    margin-left: 15%;
+}
+#introduction>p{
+    font-size: 4vw;
+}
+#download{
+    aspect-ratio: 10;
+}
+#DNmode{
+  width:6%;
+}
+}
+@media screen and (min-width:420px) and (max-width:600px){
+#section1{
+    flex-direction: column;
+}
+#image_container{
+    width: 100%;
+    margin-left: 1%;
+}
+#download_div{
+    width:60%;
+    margin-left: 5%;
+    margin-bottom:10%;
+}
+#text{
+    font-size: 6vw;
+}
+#download_text{
+    font-size: 3.5vw;
+    padding-top: 10%;
+    margin-left: 15%;
+}
+#introduction>p{
+    font-size: 4vw;
+}
+#DNmode{
+  width:6%;
+}
+#download{
+    aspect-ratio: 10;
+}
+}
+@media screen and (max-width:420px){
+#section1{
+    flex-direction: column;
+}
+#image_container{
+    width: 100%;
+    margin-left: 1%;
+}
+#download_div{
+    width:60%;
+    margin-left: 5%;
+    margin-bottom:10%;
+}
+#text{
+    font-size: 6vw;
+   
+}
+#download_text{
+    font-size: 3.5vw;
+    padding-top: 10%;
+    margin-left: 15%;
+}
+#introduction>p{
+    font-size: 4vw;
+}
+#DNmode{
+  width:6%;
+}
+@keyframes bar_change{
+  from{box-shadow: none;}
+  to{box-shadow: inset 0.5rem -0.3rem #5a3502;
+border-color: whitesmoke;
+}
+}
+.bar_reverse_animation{
+  animation: bar_reverse_change 0.1s ease-out forwards ;
+}
+@keyframes bar_reverse_change{
+  from{box-shadow: inset 0.5rem -0.3rem #5a3502;
+border-color: whitesmoke;}
+  to{box-shadow: none}
+}
+#download{
+    aspect-ratio: 10;
+}
+}
