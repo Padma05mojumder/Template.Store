@@ -207,7 +207,7 @@ footer{
   border-color: rgb(249, 157, 17,0.612);
 }
 #dropdownListButton{
-  width:62%;
+  width:70%;
   border-radius: 0.5rem;
   border-style: solid;
   font-size: 1.5vw;
@@ -313,14 +313,21 @@ header>#template_div>h1{
 }
 #dropdownMenuButton{
   font-size: 2.5vw;
-  margin-left: 160%;
-  margin-bottom: 25%;
+  position: relative;
+  left:160%;
+  margin-bottom: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #dropdownListButton{
   font-size: 2.5vw;
-  margin-left: 210%;
+  position: relative;
+  left: 188%;
   margin-bottom: 15%;
-  width:70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dropdown{
   width: 20%;
@@ -374,7 +381,7 @@ footer{
 }
 @media screen and (max-width:420px){
   header{
-    height: 20vh;
+    height: 30vh;
     gap:1%;
   }
   header>#template_div>h2{
@@ -398,17 +405,24 @@ header>#template_div>h1{
   width: 70%;
   height: 4dvh;
   font-size: 3vw;
-  margin-left: 140%;
-  margin-bottom: 10%;
-  padding-left: 3%;
+  position: relative;
+  left: 140%;
+  margin-bottom: 5%;
   padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #dropdownListButton{
   font-size: 3vw;
-  margin-left: 170%;
   width: 50%;
   height: 4dvh;
   padding-top: 7%;
+  position: relative;
+  left: 148%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .dropdown{
   width: 25%;
